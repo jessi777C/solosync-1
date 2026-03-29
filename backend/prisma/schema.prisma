@@ -1,0 +1,66 @@
+// This is your Prisma schema file
+
+generator client {
+  provider = "prisma-client-js"
+  engineType = "library"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Modelo: Propostas (Orçamentos)
+model Proposal {
+  id          Int      @id @default(autoincrement())
+  title       String
+  client      String
+  value       Float
+  status      String   @default("Rascunho")
+  statusClass String   @default("status-draft")
+  time        String   @default("Agora mesmo")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// Modelo: Clientes
+model Client {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  company   String?
+  avatar    String?  @default("https://ui-avatars.com/api/?background=random&name=User")
+  status    String   @default("Ativo")
+  createdAt DateTime @default(now())
+}
+
+// Modelo: Contratos
+model Contract {
+  id        Int      @id @default(autoincrement())
+  client    String
+  project   String
+  value     Float
+  signedAt  String   @default("-")
+  status    String   @default("Aguardando Assinatura")
+  createdAt DateTime @default(now())
+}
+
+// Modelo: Faturas (Invoices)
+model Invoice {
+  id        Int      @id @default(autoincrement())
+  client    String
+  value     Float
+  dueDate   String
+  status    String   @default("Pendente")
+  createdAt DateTime @default(now())
+}
+
+// Modelo: Agendamentos
+model Appointment {
+  id        Int      @id @default(autoincrement())
+  day       String
+  time      String
+  client    String?
+  booked    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propostas | HubFreelance</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">FH</div>
+      <span class="logo-text">HubFreelance</span>
+    </div>
+    
+    <ul class="nav-menu">
+      <a href="index.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="grid-outline"></ion-icon>
+        <span>Dashboard</span>
+      </a>
+      <a href="propostas.html" class="nav-item active" style="text-decoration: none;">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <span>Propostas</span>
+      </a>
+      <a href="contratos.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="briefcase-outline"></ion-icon>
+        <span>Contratos</span>
+      </a>
+      <a href="faturas.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="receipt-outline"></ion-icon>
+        <span>Faturas</span>
+      </a>
+      <a href="agenda.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>Agenda</span>
+      </a>
+      <a href="clientes.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="people-outline"></ion-icon>
+        <span>Clientes</span>
+      </a>
+      <a href="configuracoes.html" class="nav-item" style="text-decoration: none; margin-top: auto;">
+        <ion-icon name="settings-outline"></ion-icon>
+        <span>Configurações</span>
+      </a>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Top Header -->
+    <header class="header">
+      <div class="header-search">
+        <ion-icon name="search-outline"></ion-icon>
+        <input type="text" placeholder="Buscar propostas...">
+      </div>
+      
+      <div class="user-profile">
+        <ion-icon name="notifications-outline" style="font-size: 24px; color: var(--text-secondary); margin-right: 16px;"></ion-icon>
+        <img src="https://i.pravatar.cc/150?img=47" alt="Perfil" class="avatar">
+      </div>
+    </header>
+
+    <!-- Dashboard Area / Page Content -->
+    <div class="dashboard-container" style="max-width: 1400px; padding: 32px 40px;">
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <div>
+          <h1 class="page-title">Propostas e Orçamentos</h1>
+          <p class="page-subtitle">Crie propostas irrecusáveis que se transformam em faturas automaticamente.</p>
+        </div>
+        <button class="btn-primary" style="padding: 12px 24px; font-size: 15px;">
+          <ion-icon name="add-circle-outline" style="font-size: 20px;"></ion-icon> Nova Proposta
+        </button>
+      </div>
+
+      <!-- Proposals Layout -->
+      <div class="proposals-layout">
+        
+        <!-- Left Sidebar: Proposals List -->
+        <div class="proposals-list">
+          <!-- Item 1 -->
+          <div class="proposal-card active">
+            <div class="proposal-card-header">
+              <h3 class="item-title">Design App Financeiro</h3>
+              <span class="status-badge status-pending">Enviado</span>
+            </div>
+            <div class="proposal-client">TechCorp Finance LTDA.</div>
+            <div class="proposal-footer">
+              <span>US$ 4.500</span>
+              <span style="color: var(--text-secondary); font-weight: 400;">Há 2 dias</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="proposal-card">
+            <div class="proposal-card-header">
+              <h3 class="item-title">Consultoria UX 20h</h3>
+              <span class="status-badge status-paid">Aceito</span>
+            </div>
+            <div class="proposal-client">Startup Alpha</div>
+            <div class="proposal-footer">
+              <span>US$ 1.200</span>
+              <span style="color: var(--text-secondary); font-weight: 400;">Há 5 dias</span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="proposal-card">
+            <div class="proposal-card-header">
+              <h3 class="item-title">Landing Page Premium</h3>
+              <span class="status-badge status-draft">Rascunho</span>
+            </div>
+            <div class="proposal-client">Clinica Sorriso</div>
+            <div class="proposal-footer">
+              <span>US$ 900</span>
+              <span style="color: var(--text-secondary); font-weight: 400;">Hoje</span>
+            </div>
+          </div>
+          
+          <!-- Item 4 -->
+          <div class="proposal-card">
+            <div class="proposal-card-header">
+              <h3 class="item-title">Identidade Visual</h3>
+              <span class="status-badge" style="background: rgba(239, 68, 68, 0.1); color: var(--danger);">Recusado</span>
+            </div>
+            <div class="proposal-client">Restaurante XYZ</div>
+            <div class="proposal-footer">
+              <span>US$ 2.500</span>
+              <span style="color: var(--text-secondary); font-weight: 400;">Mês passado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content: Proposal Viewer/Editor -->
+        <div class="proposal-viewer">
+          
+          <div class="proposal-viewer-header">
+            <div>
+              <h2 style="font-size: 20px; font-weight: 600; margin-bottom: 4px;">Proposta #PRP-0104</h2>
+              <p style="color: var(--text-secondary); font-size: 14px;">Criada em 25 Mar 2026 • Expira em 10 Abr 2026</p>
+            </div>
+            <div class="proposal-viewer-actions">
+              <button class="btn-secondary">
+                <ion-icon name="create-outline"></ion-icon> Editar
+              </button>
+              <button class="btn-primary">
+                <ion-icon name="paper-plane-outline"></ion-icon> Reenviar Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Document Preview Area -->
+          <div class="proposal-document-container">
+            <div class="proposal-document">
+              
+              <div class="doc-header">
+                <div>
+                  <div class="doc-logo">MariaFreelance.</div>
+                  <div style="color: var(--text-secondary); margin-top: 16px; line-height: 1.6;">
+                    maria@freelancehub.com<br>
+                    São Paulo, SP - Brasil
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <h1 class="doc-title">Proposta de Serviço</h1>
+                  <p style="color: var(--text-secondary); font-size: 16px;">Para: TechCorp Finance LTDA.</p>
+                  <p style="color: var(--text-secondary); font-size: 16px; margin-top: 4px;">A/C: Diretor de Produto</p>
+                </div>
+              </div>
+
+              <div class="doc-section">
+                <h3 class="doc-section-title">O Desafio</h3>
+                <p style="color: var(--text-primary); line-height: 1.7;">
+                  A TechCorp deseja reformular a experiência do seu app principal, focando em usabilidade para novos usuários (onboarding) e modernização da interface de extratos, visando aumentar a taxa de retenção nos primeiros 30 dias de uso.
+                </p>
+              </div>
+
+              <div class="doc-section">
+                <h3 class="doc-section-title">Escopo do Trabalho & Investimento</h3>
+                <table class="doc-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 50%;">Serviço</th>
+                      <th style="text-align: center;">Duração Estimada</th>
+                      <th style="text-align: right;">Valor (US$)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>Auditoria UX e Wireframes</strong><br>
+                        <span style="font-size: 13px; color: var(--text-secondary);">Análise da jornada atual e fluxos de tela em baixa fidelidade.</span>
+                      </td>
+                      <td style="text-align: center;">2 semanas</td>
+                      <td style="text-align: right;">$ 1.500,00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Design de Interface (UI)</strong><br>
+                        <span style="font-size: 13px; color: var(--text-secondary);">Design system e telas de alta fidelidade no Figma (Até 30 telas).</span>
+                      </td>
+                      <td style="text-align: center;">3 semanas</td>
+                      <td style="text-align: right;">$ 2.500,00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Handoff & Acompanhamento Dev</strong><br>
+                        <span style="font-size: 13px; color: var(--text-secondary);">Revisão visual do código e documentação.</span>
+                      </td>
+                      <td style="text-align: center;">1 semana</td>
+                      <td style="text-align: right;">$ 500,00</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="doc-total">
+                  Total Final: <span style="color: var(--accent-secondary);">US$ 4.500,00</span>
+                </div>
+              </div>
+
+              <div class="doc-section" style="margin-top: 60px; border-top: 1px solid var(--border-color); padding-top: 32px;">
+                <h3 class="doc-section-title">Próximos Passos</h3>
+                <p style="color: var(--text-primary); line-height: 1.7; margin-bottom: 24px;">
+                  Para prosseguirmos, clique no botão para aprovar digitalmente este orçamento. Um contrato será gerado baseando-se nestes termos e a primeira fatura (sinal de 50%) será enviada em seguida.
+                </p>
+                
+                <div style="background: rgba(16,185,129,0.1); border: 1px dashed var(--success); padding: 24px; border-radius: 8px; text-align: center;">
+                  <button class="btn-primary" style="margin: 0 auto; padding: 12px 32px; font-size: 16px; background: var(--success);">
+                    Assinar e Aprovar Proposta
+                  </button>
+                  <p style="color: var(--text-secondary); font-size: 13px; margin-top: 12px;">
+                    Com validade legal por e-signature.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Specific logic for proposal page interactions
+    document.addEventListener('DOMContentLoaded', () => {
+      const proposalCards = document.querySelectorAll('.proposal-card');
+      proposalCards.forEach(card => {
+        card.addEventListener('click', () => {
+          proposalCards.forEach(c => c.classList.remove('active'));
+          card.classList.add('active');
+          // In a real app we'd load the content dynamically here
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubFreelance - Seu negócio em um só lugar</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">FH</div>
+      <span class="logo-text">HubFreelance</span>
+    </div>
+    
+    <ul class="nav-menu">
+      <a href="index.html" class="nav-item active" style="text-decoration: none;">
+        <ion-icon name="grid-outline"></ion-icon>
+        <span>Dashboard</span>
+      </a>
+      <a href="propostas.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <span>Propostas</span>
+      </a>
+      <a href="contratos.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="briefcase-outline"></ion-icon>
+        <span>Contratos</span>
+      </a>
+      <a href="faturas.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="receipt-outline"></ion-icon>
+        <span>Faturas</span>
+      </a>
+      <a href="agenda.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>Agenda</span>
+      </a>
+      <a href="clientes.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="people-outline"></ion-icon>
+        <span>Clientes</span>
+      </a>
+      <a href="configuracoes.html" class="nav-item" style="text-decoration: none; margin-top: auto;">
+        <ion-icon name="settings-outline"></ion-icon>
+        <span>Configurações</span>
+      </a>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Top Header -->
+    <header class="header">
+      <div class="header-search">
+        <ion-icon name="search-outline"></ion-icon>
+        <input type="text" placeholder="Buscar faturas, propostas, clientes...">
+      </div>
+      
+      <div class="user-profile">
+        <ion-icon name="notifications-outline" style="font-size: 24px; color: var(--text-secondary); margin-right: 16px;"></ion-icon>
+        <!-- A placeholder cute avatar -->
+        <img src="https://i.pravatar.cc/150?img=47" alt="Perfil" class="avatar">
+      </div>
+    </header>
+
+    <!-- Dashboard Data -->
+    <div class="dashboard-container">
+      <h1 class="page-title">Bem-vindo(a), Maria</h1>
+      <p class="page-subtitle">Aqui está o resumo do seu negócio de Freelance hoje.</p>
+
+      <!-- Key Metrics -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-header">
+            <span>MRR (Recorrente)</span>
+            <div class="metric-icon"><ion-icon name="cash-outline"></ion-icon></div>
+          </div>
+          <div class="metric-value">US$ 4.250</div>
+          <div class="metric-trend trend-up">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+            <span>+15% vs mês anterior</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <span>Faturas Pendentes</span>
+            <div class="metric-icon" style="background: rgba(245,158,11,0.1); color: var(--warning);"><ion-icon name="alert-circle-outline"></ion-icon></div>
+          </div>
+          <div class="metric-value">US$ 1.120</div>
+          <div class="metric-trend trend-down">
+            <ion-icon name="time-outline"></ion-icon>
+            <span style="color: var(--text-secondary)">3 faturas aguardando</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <span>Conversão de Propostas</span>
+            <div class="metric-icon" style="background: rgba(16,185,129,0.1); color: var(--success);"><ion-icon name="trending-up-outline"></ion-icon></div>
+          </div>
+          <div class="metric-value">68%</div>
+          <div class="metric-trend trend-up">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+            <span>+5% vs mês anterior</span>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-header">
+            <span>Sessões Hoje</span>
+            <div class="metric-icon" style="background: rgba(139,92,246,0.1); color: var(--accent-secondary);"><ion-icon name="calendar-number-outline"></ion-icon></div>
+          </div>
+          <div class="metric-value">4</div>
+          <div class="metric-trend">
+            <span style="color: var(--text-secondary)">Próxima às 14:00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Columns -->
+      <div class="content-grid">
+        
+        <!-- Left Column: Recent Activity & Invoices -->
+        <div class="left-col">
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <h2 class="card-title">Faturas Recentes</h2>
+              <button class="btn-primary">
+                <ion-icon name="add-outline"></ion-icon> Nova Fatura
+              </button>
+            </div>
+            
+            <div class="list-container">
+              
+              <div class="list-item">
+                <div class="item-info">
+                  <div class="item-icon" style="background: rgba(16,185,129,0.1); color: var(--success);">
+                    <ion-icon name="checkmark-done-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="item-title">Design WebApp TechCorp</h3>
+                    <div class="item-meta">João Silva • #INV-0042 • Em 24 Mar</div>
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <div class="item-title">US$ 1.500</div>
+                  <span class="status-badge status-paid">Pago</span>
+                </div>
+              </div>
+              
+              <div class="list-item">
+                <div class="item-info">
+                  <div class="item-icon" style="background: rgba(245,158,11,0.1); color: var(--warning);">
+                    <ion-icon name="time-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="item-title">Consultoria UX 2 Horas</h3>
+                    <div class="item-meta">Empresa Alpha • #INV-0043 • Vence Hoje</div>
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <div class="item-title">US$ 300</div>
+                  <span class="status-badge status-pending">Pendente</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="item-info">
+                  <div class="item-icon">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="item-title">Retainer Mensal Desenvolvedor</h3>
+                    <div class="item-meta">Beta Startup • #INV-0044 • Rascunho</div>
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <div class="item-title">US$ 2.000</div>
+                  <span class="status-badge status-draft">Rascunho</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Schedule & Active Proposals -->
+        <div class="right-col">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Agenda Hoje</h2>
+              <ion-icon name="ellipsis-horizontal" style="color: var(--text-secondary); cursor: pointer;"></ion-icon>
+            </div>
+            
+            <div class="list-container">
+              
+              <div class="list-item" style="border-left: 4px solid var(--accent-primary); padding-left: 12px; background: rgba(139,92,246,0.05); border-radius: 8px;">
+                <div>
+                  <h3 class="item-title">Reunião de Kickoff - App X</h3>
+                  <div class="item-meta">14:00 - 15:00 • Com Mariana</div>
+                </div>
+                <!-- Mini Video call button -->
+                <div class="item-icon" style="width: 32px; height:32px; background: var(--accent-primary); color: white; border-radius: 50%; cursor: pointer;">
+                  <ion-icon name="videocam-outline"></ion-icon>
+                </div>
+              </div>
+              
+              <div class="list-item" style="border-left: 4px solid var(--text-secondary); padding-left: 12px; margin-top: 12px;">
+                <div>
+                  <h3 class="item-title">Apresentação Proposta Design</h3>
+                  <div class="item-meta">16:30 - 17:00 • Com Cliente XYZ</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card" style="margin-top: 24px;">
+            <div class="card-header">
+              <h2 class="card-title">Status: Propostas</h2>
+            </div>
+            <!-- Simple Progress -->
+            <div style="margin-bottom: 16px;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                <span class="item-meta">Aceitas (8)</span>
+                <span class="item-meta">Pendentes (3)</span>
+              </div>
+              <div style="width: 100%; height: 8px; background: var(--surface-hover); border-radius: 4px; overflow: hidden; display: flex;">
+                <div style="width: 70%; background: var(--success); height: 100%;"></div>
+                <div style="width: 30%; background: var(--warning); height: 100%;"></div>
+              </div>
+            </div>
+            <button class="btn-primary" style="width: 100%; justify-content: center; background: transparent; border: 1px solid var(--border-color); color: var(--text-primary);">
+              Ver Todas Propostas
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

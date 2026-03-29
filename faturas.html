@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faturas | HubFreelance</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">FH</div>
+      <span class="logo-text">HubFreelance</span>
+    </div>
+    <ul class="nav-menu">
+      <a href="index.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="grid-outline"></ion-icon>
+        <span>Dashboard</span>
+      </a>
+      <a href="propostas.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <span>Propostas</span>
+      </a>
+      <a href="contratos.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="briefcase-outline"></ion-icon>
+        <span>Contratos</span>
+      </a>
+      <a href="faturas.html" class="nav-item active" style="text-decoration: none;">
+        <ion-icon name="receipt-outline"></ion-icon>
+        <span>Faturas</span>
+      </a>
+      <a href="agenda.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>Agenda</span>
+      </a>
+      <a href="clientes.html" class="nav-item" style="text-decoration: none;">
+        <ion-icon name="people-outline"></ion-icon>
+        <span>Clientes</span>
+      </a>
+      <a href="configuracoes.html" class="nav-item" style="text-decoration: none; margin-top: auto;">
+        <ion-icon name="settings-outline"></ion-icon>
+        <span>Configurações</span>
+      </a>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header class="header">
+      <div class="header-search">
+        <ion-icon name="search-outline"></ion-icon>
+        <input type="text" placeholder="Buscar faturas...">
+      </div>
+      <div class="user-profile">
+        <ion-icon name="notifications-outline" style="font-size: 24px; color: var(--text-secondary); margin-right: 16px;"></ion-icon>
+        <img src="https://i.pravatar.cc/150?img=47" alt="Perfil" class="avatar">
+      </div>
+    </header>
+
+    <div class="dashboard-container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <div>
+          <h1 class="page-title">Faturas e Recebimentos</h1>
+          <p class="page-subtitle">Gerencie suas cobranças, taxas e pagamentos recebidos (via Stripe).</p>
+        </div>
+        <button class="btn-primary">Nova Fatura</button>
+      </div>
+      <div class="card" style="text-align: center; padding: 100px 40px;">
+        <ion-icon name="receipt-outline" style="font-size: 64px; color: var(--text-secondary);"></ion-icon>
+        <h2 style="margin: 16px 0;">Área Financeira Centralizada</h2>
+        <p style="color: var(--text-secondary); font-size: 16px;">Aqui você enviará cobranças individuais ou configurará mensalidades e assinaturas.</p>
+        <button class="btn-secondary" style="margin: 24px auto 0;">Conectar Banco (Stripe)</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
