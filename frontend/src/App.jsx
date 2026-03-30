@@ -16,13 +16,14 @@ import './index.css';
 
 function App() {
   // Bypass de login para desenvolvimento: volta para a tela de inicio automaticamente
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('solosync_auth'));
 
   useEffect(() => {
-    // Escuta mudanças de auth
+    // Escuta mudanças de auth entre abas ou ao carregar
     const checkAuth = () => {
       setIsAuthenticated(!!localStorage.getItem('solosync_auth'));
     };
+    checkAuth();
     window.addEventListener('storage', checkAuth);
     return () => window.removeEventListener('storage', checkAuth);
   }, []);
