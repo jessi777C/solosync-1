@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { 
   IoGridOutline, IoDocumentTextOutline, IoBriefcaseOutline,
-  IoReceiptOutline, IoCalendarOutline, IoPeopleOutline, IoSettingsOutline
+  IoReceiptOutline, IoCalendarOutline, IoPeopleOutline, IoSettingsOutline,
+  IoLogOutOutline
 } from 'react-icons/io5';
 
 function Sidebar() {
@@ -43,6 +44,30 @@ function Sidebar() {
           <IoSettingsOutline size={20} />
           <span>Configurações</span>
         </NavLink>
+
+        <button 
+          onClick={() => {
+            localStorage.removeItem('solosync_auth');
+            window.location.href = '/login';
+          }}
+          className="nav-item logout-btn"
+          style={{ 
+            background: 'none', 
+            border: 'none', 
+            color: '#ff4d4d', 
+            cursor: 'pointer',
+            padding: '12px 20px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            width: '100%',
+            fontWeight: '500',
+            marginTop: '10px'
+          }}
+        >
+          <IoLogOutOutline size={20} />
+          <span>Sair</span>
+        </button>
       </ul>
     </aside>
   );

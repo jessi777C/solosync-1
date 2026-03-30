@@ -33,7 +33,7 @@ function Faturas() {
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(`http://localhost:5173/${lastLink}`);
+    navigator.clipboard.writeText(`${window.location.origin}/${lastLink}`);
     alert('Link copiado! Envie para o seu cliente pelo WhatsApp ou e-mail.');
   };
 
@@ -108,7 +108,7 @@ function Faturas() {
             <div style={{ padding: '16px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                <IoLinkOutline color="var(--accent-primary)" size={20} />
                <span style={{ fontSize: '14px', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                  http://localhost:5173/{lastLink}
+                  {window.location.origin}/{lastLink}
                </span>
                <button onClick={copyLink} style={{ background: 'var(--accent-primary)', border: 'none', color: 'white', padding: '6px 12px', borderRadius: '6px', cursor: 'pointer', fontSize: '13px' }}>Copiar</button>
             </div>
