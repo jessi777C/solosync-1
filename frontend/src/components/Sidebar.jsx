@@ -1,3 +1,4 @@
+// SoloSync V1.1 - Produção 💎
 import { NavLink } from 'react-router-dom';
 import { 
   IoGridOutline, IoDocumentTextOutline, IoBriefcaseOutline,
