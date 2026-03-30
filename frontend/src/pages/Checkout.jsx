@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import API_BASE_URL from "../api_config";
-import API_BASE_URL from "../api_config";
 import { useParams } from 'react-router-dom';
 import { IoShieldCheckmarkOutline, IoCardOutline, IoPhonePortraitOutline, IoBagAddOutline } from 'react-icons/io5';
 
